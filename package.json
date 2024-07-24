@@ -5,8 +5,10 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --output-path docs --base-href /",
-    "watch": "ng build --output-path docs --base-href / --watch --configuration development",
-    "test": "ng test --browsers ChromeHeadless",
+    "watch": "ng build --watch --configuration development",
+    "build:prod": "ng build --configuration production --base-href https://matlange.github.io/angular-portfolio/",
+    "test:headless": "ng test --watch=false --browsers=ChromeHeadless",    
+    "test": "ng test",
     "serve:ssr:myportfolio": "node dist/myportfolio/server/server.mjs",
     "lint": "ng lint"
   },

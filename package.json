@@ -6,7 +6,7 @@
     "start": "ng serve",
     "build": "ng build --output-path docs --base-href /",
     "watch": "ng build --watch --configuration development",
-    "build:prod": "ng build --configuration production --base-href https://matlange.github.io/angular-portfolio/",
+    "build:prod": "ng build --configuration production --base-href https://matlange.github.io/angular-portfolio/browser",
     "test:headless": "ng test --watch=false --browsers=ChromeHeadless",    
     "test": "ng test",
     "serve:ssr:myportfolio": "node dist/myportfolio/server/server.mjs",

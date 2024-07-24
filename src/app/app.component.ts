@@ -2,9 +2,6 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { ProgressbarComponent } from './progressbar/progressbar.component';
 import { FormsModule } from '@angular/forms';
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatGridListModule} from '@angular/material/grid-list';
 
@@ -35,7 +32,7 @@ export class AppComponent {
     this.progress = +($event.target as HTMLInputElement).value;
   }  
   
-  onResize(event: any) {
-    console.log(event.target.innerWidth);
+  onResize($event: Event) {
+    console.log($event.target);
   }
 }
